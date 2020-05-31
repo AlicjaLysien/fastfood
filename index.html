@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Alicja's Pizzas</title>
+  <title>Welcome to Alicja's Fast Food</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="fontello/css/fontello.css">
@@ -31,21 +31,33 @@
 <!-- logo --> 
 
 <!-- search--> 
-<form class="form-inline d-none d-sm-block" id="search">
+<form class="form-inline d-none d-sm-none d-md-block" id="search">
   <input class="form-control mr-2" type="search" placeholder="Search">
   <button class="btn btn-light" type="submit">Ok</button>
 </form>
 <!-- search--> 
 
+<!-- basket -->
+
+<div id="basket">
+  <a href="basket.html"><i class="icon-basket"> </i> </a>
+  </div>
+
+<!--basket -->
+
 <!-- menu --> 
+
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu" >  
 <span class="navbar-toggler-icon">
 </span>
 </button>
 
-<div class="collapse navbar-collapse" id="mainmenu">
-  <ul class="navbar-nav mr-auto">
 
+<div class="collapse navbar-collapse" id="mainmenu">
+
+
+  <ul class="navbar-nav mr-auto">
+   
       <li class="nav-item">
         <a class="nav-link" href="login.html">Log in</a>
       </li>
@@ -64,6 +76,8 @@
 
   </ul>
 </div>
+
+
 <!-- menu --> 
 
 
@@ -86,65 +100,43 @@
 
 
 <!-- photos --> 
+<!-- bootstrap template -->
 
-
-<!--Carousel Wrapper-->
-<div id="carousel-example-2" class="carousel slide carousel-fade z-depth-1-half d-none d-sm-block" data-ride="carousel">
-  <!--Indicators-->
+<div id="carouselExampleCaptions" class="carousel slide d-none d-md-block" data-ride="carousel">
   <ol class="carousel-indicators">
-    <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-2" data-slide-to="1"></li>
-    <li data-target="#carousel-example-2" data-slide-to="2"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
   </ol>
-  <!--/.Indicators-->
-  <!--Slides-->
-  <div class="carousel-inner" role="listbox">
+  <div class="carousel-inner">
     <div class="carousel-item active">
-      <div class="view">
-        <img class="d-block w-100" src="img/banner01.jpg" alt="First slide">
-        <div class="mask rgba-black-light"></div>
-      </div>
-      <div class="carousel-caption">
-        <h3 class="h3-responsive">This is the first title</h3>
-        <p>First text</p>
+      <img src="img/banner01.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>The fastest and cheapest pizza in the city!</h5>
       </div>
     </div>
     <div class="carousel-item">
-      <!--Mask color-->
-      <div class="view">
-        <img class="d-block w-100" src="img/banner02.jpg" alt="Second slide">
-        <div class="mask rgba-black-light"></div>
-      </div>
-      <div class="carousel-caption">
-        <h3 class="h3-responsive">Thir is the second title</h3>
-        <p>Secondary text</p>
+      <img src="img/banner02.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>All prepared by best cooks!</h5>
       </div>
     </div>
     <div class="carousel-item">
-      <!--Mask color-->
-      <div class="view">
-        <img class="d-block w-100" src="img/banner03.jpg" alt="Third slide">
-        <div class="mask rgba-black-light"></div>
-      </div>
-      <div class="carousel-caption">
-        <h3 class="h3-responsive">This is the third title</h3>
-        <p>Third text</p>
+      <img src="img/banner03.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Always fresh ingredients!</h5>
       </div>
     </div>
   </div>
-  <!--/.Slides-->
-  <!--Controls-->
-  <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-  <!--/.Controls-->
 </div>
-<!--/.Carousel Wrapper-->
 
 <!-- photos --> 
 
@@ -155,37 +147,34 @@
 <div class="container">
 <div class="row">
   
-  <div class="col-sm-4 mb-3 foodwindow"><img class="img-fluid" src="img/pizza01a.jpg">
-    <div class="foodwindowdescribtion"><p>Big Margherita + two colas</p></div>
+  <div class="col-sm-4 mb-3 foodwindow"><img class="img-fluid" src="img/burger/burger02.png">
+    <div class="foodwindowdescribtion"><p>One BBQ Dream</p></div>
     
-    <p class="priceold">Price: <s>190K</s></p>
-    <p class="pricenew">165 CZK</p>
+    <p class="priceold">Price: <s>130 CZK</s></p>
+    <p class="pricenew">110 CZK</p>
     <div class="text-center"><a href="#">Order now!</a> </div>
     </div>
 
 
-<div class="col-sm-4 mb-3 foodwindow"><img class="img-fluid" src="img/pizza01a.jpg">
-  <div class="foodwindowdescribtion"><p>One small Hawai</p></div>
+<div class="col-sm-4 mb-3 foodwindow"><img class="img-fluid" src="img/pizza/pizza07.png">
+  <div class="foodwindowdescribtion"><p>One big Diavolo + 2 colas</p></div>
   
-  <p class="priceold">Price: <s>155 CZK</s></p>
-  <p class="pricenew">120 CZK</p>
+  <p class="priceold">Price: <s>200 CZK</s></p>
+  <p class="pricenew">160 CZK</p>
   <div class="text-center"><a href="#">Order now!</a> </div>
   </div>
 
-  <div class="col-sm-4 mb-3 foodwindow"><img class="img-fluid" src="img/pizza01a.jpg">
-    <div class="foodwindowdescribtion"><p>Two big Capricciosas</p></div>
+  <div class="col-sm-4 mb-3 foodwindow"><img class="img-fluid" src="img/sushi/sushi04.png">
+    <div class="foodwindowdescribtion"><p>Sake sushi set 10 pc.</p></div>
     
-    <p class="priceold">Price: <s>320 CZK</s></p>
-    <p class="pricenew">270 CZK</p>
+    <p class="priceold">Price: <s>130 CZK</s></p>
+    <p class="pricenew">110 CZK</p>
     <div class="text-center"><a href="#">Order now!</a> </div>
     </div>
 
 </div>
 </div>
 
-<svg class="bi bi-chevron-right" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L10.293 8 4.646 2.354a.5.5 0 010-.708z" clip-rule="evenodd"/>
-</svg>
 
 <!--Food items - discount -->
 

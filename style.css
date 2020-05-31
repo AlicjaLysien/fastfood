@@ -1,3 +1,73 @@
+/* everywhere */
+h2
+{
+  text-align: center;
+color: #270000;
+font-size: 36px;
+font-weight: 600;
+padding-top: 20;
+padding-bottom: 10;
+}
+
+
+
+
+/* everywhere */
+
+
+/* basket media*/
+@media (max-width: 360px)
+{
+
+}
+@media (min-width: 361px) and (max-width: 767px)
+{
+#basket
+{
+  position:absolute;
+  top:45;
+  right:80;
+}
+}
+@media (min-width: 768px) 
+{
+#basket
+{
+  position:absolute;
+  top:122;
+  right:405;
+}
+}
+/* basket media */
+
+/* basket */
+
+.icon-basket::before
+{
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 32px;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  margin-right: .2em;
+  text-align: center;
+
+}
+
+#basket a
+{
+  color: rgb(146, 140, 140);
+}
+
+#basket a:hover
+{
+  color: rgb(20, 20, 20);
+}
+
+/* basket */
+
 /*menu - media xs*/
 @media (max-width: 575px)
 {#logo
@@ -15,6 +85,7 @@ text-align: center;
 {
   border-top: 1px solid rgb(199, 191, 191);
 }
+
 }
 /*menu - media xs*/
 
@@ -70,6 +141,17 @@ font-size: 26px;
 
 
 /* menu */
+
+/* menu photos */
+
+#carouselExampleCaptions h5
+{
+font-size: 46px;
+text-shadow: 3px 5px 3px #270000;
+}
+
+
+/* menu photos */
 
 /*foodmenu */
 #foodmenu
@@ -371,14 +453,18 @@ padding-bottom: 10;
 
 .menuallitems
 {
-  padding-top: 20;
-  padding-bottom: 20;
-  margin: 0 auto;
+  margin-top:30px;
+  margin-bottom:30px;
 }
 .menuallabouroneitem
 {
   padding-top: 20;
   padding-bottom: 20;
+  background-color: rgb(255, 236, 236);
+  border: 0px solid whitel;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 @media(max-width: 575px)
 {.menuphotoitem
